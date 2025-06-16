@@ -42,7 +42,7 @@ public class Baseclass {
 		}
 	}
 	
-	//Hi
+	
 						//Locator
 	public static WebElement Locator(String browser, String value) {
 		WebElement element = null;
