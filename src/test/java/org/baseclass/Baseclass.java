@@ -97,7 +97,7 @@ public class Baseclass {
 		}
 	}
 
-								//Actions
+						//Actions
 	public static void Action(String browser, WebElement element, WebElement drop) {
 		Actions a=new Actions(driver);
 		switch (browser) {
@@ -122,7 +122,7 @@ public class Baseclass {
 		}
 	}
 
-								//Robot Class
+						//Robot Class
 	public static void Robotclass(String key, int keys) throws AWTException {
 		Robot r=new Robot();
 		switch (key) {
@@ -137,7 +137,7 @@ public class Baseclass {
 			System.out.println("Invalid Robotclass");
 		}
 	}
-								//JavaScriptExecutor
+						//JavaScriptExecutor
 	public static void JavaScript(String browser, WebElement element) {
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		switch (browser) {
@@ -165,7 +165,7 @@ public class Baseclass {
 		}
 	}
 
-								//Select
+						//Select
 	public static void select(String browser, WebElement element, String value) {
 		Select s=new Select(element);
 		switch (browser) {
@@ -184,7 +184,7 @@ public class Baseclass {
 		}
 	}
 
-							//Alert
+						//Alert
 	public static void alert(String browser) {
 		Alert a= driver.switchTo().alert();
 		switch (browser) {
@@ -201,7 +201,7 @@ public class Baseclass {
 			System.out.println("Invalid Alert");
 		}
 	}
-							//TakesScreenshot
+						//TakesScreenshot
 	public static void Screenshot(String name) {
 		try {
 		File screenshotAs = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -212,7 +212,7 @@ public class Baseclass {
 			e.printStackTrace();
 		}
 	}
-							//Frames
+						//Frames
 	public static void frames(String method,int index,String name,WebElement ref) {
 		switch (method) {
 		case "index":
