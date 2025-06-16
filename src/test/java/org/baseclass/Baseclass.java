@@ -41,8 +41,7 @@ public class Baseclass {
 			System.out.println("Driver not initalized");
 		}
 	}
-	
-	
+		
 						//Locator
 	public static WebElement Locator(String browser, String value) {
 		WebElement element = null;
